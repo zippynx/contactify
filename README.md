@@ -64,7 +64,7 @@ npm run dev
 ---
 
 
-## Future Improvements
+## 🌱 Future Improvements
 
 * Edit contact feature
 * LocalStorage persistence
