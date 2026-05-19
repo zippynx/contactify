@@ -1,0 +1,243 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f0f4f8; 
+  color: #1e293b;
+}
+
+img {
+  max-width: 100%;
+}
+
+.contact_app {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.contact_app h1 {
+  font-weight: 800;
+  font-size: 40px;
+  background: linear-gradient(135deg, #059669, #1d4ed8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 8px;
+}
+
+.contact_app h2 {
+  font-weight: 600;
+  font-size: 22px;
+  color: #334155;
+  margin-bottom: 20px;
+}
+
+.contact_input {
+  background-color: white;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px -5px rgba(5, 150, 105, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 40px;
+  border: 1px solid #e2e8f0;
+}
+
+.contact_input input {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.contact_input input:focus {
+  outline: none;
+  border-color: #10b981;
+  box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.15);
+}
+
+.contact_input button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(5, 150, 105, 0.2);
+}
+
+.contact_input button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(5, 150, 105, 0.3);
+}
+
+.contact-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.contact_item {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact_item:hover {
+  transform: translateY(-4px);
+  border-color: #a7f3d0;
+  box-shadow: 0 12px 20px -8px rgba(5, 150, 105, 0.15);
+}
+
+.contact_item_image img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #e2e8f0;
+}
+
+.contact_item_body {
+  margin-left: 16px;
+  flex: 1;
+}
+
+.contact_item_title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0f172a; 
+  margin-bottom: 2px;
+}
+
+.contact_item_username {
+  font-size: 14px;
+  color: #64748b;
+}
+
+.contact_item_delete {
+  padding: 10px 14px;
+  font-size: 14px;
+  background-color: #fee2e2;
+  color: #ef4444;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.contact_item_delete:hover {
+  background-color: #ef4444;
+  color: white;
+}
+
+.contact_search {
+  width: 100%;
+  margin: 20px 0 30px 0;
+}
+
+.contact_search input {
+  width: 100%;
+  padding: 16px 20px;
+  border-radius: 14px;
+  border: 1px solid #d8dee9;
+  background-color: white;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.contact_search input:focus {
+  border-color: #0f9d7a;
+  box-shadow: 0 0 0 4px rgba(15, 157, 122, 0.15);
+}
+
+.contact_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 24px;
+  margin-bottom: 20px;
+
+  background-color: white;
+
+  border-radius: 22px;
+
+  border: 1px solid #edf2f7;
+
+  box-shadow:
+    0 4px 12px rgba(0,0,0,0.04);
+
+  transition: all 0.2s ease;
+}
+
+.contact_item:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 10px 24px rgba(0,0,0,0.08);
+} 
+
+.contact_item_image img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.contact_item_title {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+  color: #0f172a;
+}
+
+.contact_item_tag {
+  margin-top: 6px;
+  font-size: 18px;
+  color: #64748b;
+}
+
+
+.contact_item_delete {
+  border: none;
+  background-color: #fee2e2;
+
+  color: #ef4444;
+
+  width: 42px;
+  height: 42px;
+
+  border-radius: 12px;
+
+  font-size: 18px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.contact_item_delete:hover {
+  background-color: #ef4444;
+  color: white;
+}
