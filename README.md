@@ -77,3 +77,4 @@ npm run dev
 ## 👨‍💻 Author
 
 Made with React by zippynx
+ 
